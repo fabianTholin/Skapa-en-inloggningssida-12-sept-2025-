@@ -10,8 +10,6 @@ function lyckadInloggning(){
     document.getElementById("inloggad").hidden = false;
     const username = localStorage.getItem("username");
     const password = localStorage.getItem("password");
-    console.log(username);
-    console.log(password);
    }
 
 function misslyckadInloggning(){
@@ -40,6 +38,4 @@ function loggaUt(){
     document.getElementById("start").hidden = false;
     document.getElementById("inloggad").hidden = true;
     localStorage.clear();
-    console.log(username);
-    console.log(password);
     }
