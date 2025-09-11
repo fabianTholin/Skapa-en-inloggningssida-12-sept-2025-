@@ -9,18 +9,23 @@
 
 </head>
 <body>
-    <p id="start">
+    <div id="start">
         Användarnamn:<input id="användarnamn" type="text">
         <br>
         Lösenord:
         <input id="lösenord" type="text">
         <br>
         <input id="knapp" type="button" value="Logga in" onclick="testaLoggaIn()">
-    </p>
+    </div>
 
-    <p id ="inloggad">
-        
-    </p>
+    <div hidden id="inloggad">
+        <h1>Välkommen in i värmen!</h1>
+        <input type="button" value="Logga ut" onclick="loggaUt()">
+    </div>
+    
+    <div hidden id="fel">
+        <h1>FEL ANVÄNDARNAMN &/ELLER LÖSENORD!</h1>
+    </div>
 
 </body>
 </html>
