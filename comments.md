@@ -1,8 +1,8 @@
 Jag har använt mig av fyra stycken (egna) funktioner i JS:
 
-• Testa att logga in 
-• Misslyckad inloggning 
-• Lyckad inloggning med en • Logga ut-funktion och som även anropas vid inläsning av sidan för att hantera en eventuellt befintlig inloggning (i local storage).
+<Testa att logga in> 
+<Misslyckad inloggning> 
+<Lyckad inloggning> som även anropas vid inläsning av sidan OM det redan finns en inloggning (i local storage) – en "auto-inloggning". Vid lyckad inloggning visas även en <Logga ut-funktion>.
 
 Sidans olika "states" regleras genom visande/döljande av funktions- och informationselement (samt genom hantering av data i local storage).
 
