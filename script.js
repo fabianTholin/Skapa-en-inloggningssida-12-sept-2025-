@@ -6,13 +6,17 @@ const password = localStorage.getItem("password");
 document.getElementById("inloggad").hidden = true;
 document.getElementById("fel").hidden= true;
 
+if (localStorage.getItem("username") == rättAnvändarnamn && localStorage.getItem("password") == rättLösenord){
+    lyckadInloggning();
+}
+
 function lyckadInloggning(){
+    document.getElementById("start").hidden = true;
     document.getElementById("inloggad").hidden = false;
-    const username = localStorage.getItem("username");
-    const password = localStorage.getItem("password");
-   }
+    }
 
 function misslyckadInloggning(){
+    document.getElementById("start").hidden = true;
     document.getElementById("fel").hidden= false;
 }
 
@@ -21,7 +25,7 @@ function testaLoggaIn(){
     let användarnamn = document.getElementById("användarnamnInput").value;
     let lösenord = document.getElementById("lösenordInput").value;
     let rättInloggningsuppgifter = Boolean(false);
-    document.getElementById("start").hidden = true;
+    //document.getElementById("start").hidden = true;
     
     if (användarnamn == "test" && lösenord == "1234"){
         rättInloggningsuppgifter = "true";
