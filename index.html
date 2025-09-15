@@ -5,27 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <script src = "script.js" defer></script>
+    <script src="https://kit.fontawesome.com/965145bb5c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div id="start">
         <h1>Välkommen att testa min inloggningssida!</h1>
-        Användarnamn:<input id="användarnamnInput" type="text">
+        <i class="fa-solid fa-user"></i> <input id="användarnamnInput" type="text"> (Användarnamn)
         <br>
-        Lösenord:
-        <input id="lösenordInput" type="text">
+        <i class="fa-solid fa-key"></i> <input id="lösenordInput" type="text"> (Lösenord)
         <br>
-        <input id="knapp" type="button" value="Logga in" onclick="testaLoggaIn()">
+        
+        <i class="fa-solid fa-right-to-bracket fa-2xl" id="knapp" type="button" value="Logga in" onclick="testaLoggaIn()"></i>
     </div>
 
     <div hidden id="inloggad">
+        <i class="fa-solid fa-thumbs-up fa fa-5x"></i>
         <h1>Välkommen in i värmen!</h1>
         <input type="button" value="Logga ut" onclick="loggaUt()">
     </div>
     
     <div hidden id="fel">
-        <h1>FEL ANVÄNDARNAMN OCH/ELLER LÖSENORD!</h1>
+            <i class="fa-solid fa-road-barrier fa-10x"></i>
+            <br>
+            FEL ANVÄNDARNAMN OCH/ELLER LÖSENORD!
     </div>
 </body>
 </html>
